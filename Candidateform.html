@@ -14,35 +14,36 @@
             <h1>Application form</h1>
             <hr>
         </center>
-    <form action="get">
+    <form action="/action_page.php">
     <section>
         <fieldset>
             <legend>User Details</legend>
                 <label for="Name">Name:</label>
                 <br>
-                <input type="name" name="name" id="name">
+                <input type="name" name="name" id="name" required>
                 <br>
                 <label for="Father's Name">Father's Name:</label>
                 <br>
-                <input type="Father's_name" name="Father's_name" id="Father's_name">
+                <input type="name" name="Father's_name" id="Father's_name" required>
                 <br>
                 <label for="Mother's Name">Mother's Name:</label>
                 <br>
-                <input type="Mother's_name" name="Mother's_name" id="Mother's_name">
+                <input type="name" name="Mother's_name" id="Mother's_name" required>
                 <br>
-                <label for="contact">contact number:</label>
+                <label for="contact">Contact number:</label>
                 <br>
-                <input type="number" name="number" id="number">
+                <input type="number" name="number" id="number" required>
                 <br>
                 <label for="email">Email:</label>
                 <br>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required>
+                <br>
                 <br>
                 <label for="Gender">Gender:</label>
-                <br>
-                <input type="radio" id="Male" value="Male">
+                <!-- <br> -->
+                <input type="radio" id="Male" value="Male" name="gender" required>
                 <label for="Male">Male</label>
-                <input type="radio" id="Female" value="Female">
+                <input type="radio" id="Female" value="Female" name="gender">
                 <label for="Female">Female</label>
             </fieldset>
     </section>
@@ -52,27 +53,27 @@
             <h3>Present Address:</h3>
             <table>
                 <tr>
-                    <td><input type="text" name="At" id="At" placeholder="At"></td>
-                    <td><input type="text" name="Post" id="Post" placeholder="Post"></td>
-                    <td><input type="text" name="District" id="District" placeholder="District"></td>
+                    <td><input type="text" name="At" id="At" placeholder="At" required></td>
+                    <td><input type="text" name="Post" id="Post" placeholder="Post" required></td>
+                    <td><input type="text" name="District" id="District" placeholder="District" required></td>
                 </tr>
                  <tr>
-                    <td><input type="text" name="State" id="State" placeholder="State"></td>
-                    <td><input type="text" name="Pin" id="Pin" placeholder="Pin"></td>
-                    <td><input type="text" name="Phone No." id="Phone_no." placeholder="Phone No."></td>
+                    <td><input type="text" name="State" id="State" placeholder="State" required></td>
+                    <td><input type="text" name="Pin" id="Pin" placeholder="Pin" required></td>
+                    <td><input type="text" name="Phone No." id="Phone_no." placeholder="Phone No." required></td>
                 </tr>
             </table>
                 <h3>Communication Address:</h3>
             <table>
                 <tr>
-                    <td><input type="text" name="At" id="At" placeholder="At"></td>
-                    <td><input type="text" name="Post" id="Post" placeholder="Post"></td>
-                    <td><input type="text" name="District" id="District" placeholder="District"></td>
+                    <td><input type="text" name="At" id="At" placeholder="At" required></td>
+                    <td><input type="text" name="Post" id="Post" placeholder="Post" required></td>
+                    <td><input type="text" name="District" id="District" placeholder="District" required></td>
                 </tr>
                  <tr>
-                    <td><input type="text" name="State" id="State" placeholder="State"></td>
-                    <td><input type="text" name="Pin" id="Pin" placeholder="Pin"></td>
-                    <td><input type="text" name="Phone No." id="Phone_no." placeholder="Phone No."></td>
+                    <td><input type="text" name="State" id="State" placeholder="State" required></td>
+                    <td><input type="text" name="Pin" id="Pin" placeholder="Pin" required></td>
+                    <td><input type="text" name="Phone No." id="Phone_no." placeholder="Phone No." required></td>
                 </tr>
             </table>
         </fieldset>
@@ -119,7 +120,8 @@
     <input type="checkbox" name="checkbox" id="checkbox" required>I hereby declare that the above particulars of facts and information stated are correct to the best of my belief and knowledge.
     All the facts in this resume are correct and truthful. I hereby declare that all the facts mentioned above are accurate and I take full responsibility for their accuracy.
     </section>
-    <input type="submit" value="submit">
+    <!-- <input type="submit" value="submit"> -->
+    <button type="submit">submit</button>
 </form>
 </div>
 </body>
